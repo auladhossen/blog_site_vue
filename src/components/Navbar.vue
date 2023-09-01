@@ -9,7 +9,7 @@ defineProps({
     <div class="mx-auto flex justify-between max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="flex items-center">
         <h1 class="text-gray-800 rounded-md px-3 py-2 text-sm font-medium">
-          MR BLOG
+          BLOG SITE
         </h1>
       </div>
 

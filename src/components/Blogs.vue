@@ -6,17 +6,17 @@ defineProps({
 </script>
 
 <template>
-  <div class="flex flex-col-reverse gap-6 px-9 py-6">
-    <div class="text-center font-bold text-xl">
+  <div class="px-9 py-6">
+    <div class="text-center font-bold text-xl my-3">
       <h1>সাম্প্রতিক পোস্ট</h1>
     </div>
 
     <div
       v-for="post in newPosts"
       :key="post.id"
-      class="flex flex-col-reverse border-2 rounded-md sm:ml-6 sm:block"
+      class="grid grid-cols-4 gap-4 my-3 border-2 rounded-md sm:ml-6 sm:block"
     >
-      <div v-if="post.img">
+      <div v-if="post">
         <img :src="post.img" class="rounded-t-lg" alt="post image" />
       </div>
 
@@ -30,14 +30,14 @@ defineProps({
       </div>
     </div>
 
-    <div class="text-center font-bold text-xl">
+    <div class="text-center font-bold text-xl my-3">
       <h1>সকল পোস্ট</h1>
     </div>
 
     <div
       v-for="post in posts"
       :key="post.id"
-      class="grid grid-cols-4 gap-4 border-2 rounded-md sm:ml-6 sm:block"
+      class="grid grid-cols-4 gap-4 my-3 border-2 rounded-md sm:ml-6 sm:block"
     >
       <div v-if="post.img">
         <img :src="post.img" class="rounded-t-lg" alt="post image" />
